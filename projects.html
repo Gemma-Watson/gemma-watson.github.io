@@ -2,75 +2,31 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Project Showcase</title>
+    <title>Gemma's Teaching Portfolio | Project Showcase</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
-<body style="background-color:aliceblue;">
+<body>
     <!--Header section for my project page-->
     <header>
-        <h1 style="color:cadetblue">Project Showcase</h1>
+        <h1>Project Showcase</h1>
     </header>
-    <!--Navigation menu style-->
-    <style>
-        nav {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding: 5px;
-        }
-
-        nav ul li a {
-            color: #1B5FA3;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-        }
-    </style>
         <!--Navigation menu section-->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!--This is the main content area for my page-->
     <main>
         <!--This is the section showcasing some projects/units in classes I have taught - in flexbox format-->
         <section>
-            <style>
-                .flex-container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    justify-content: space-between;
-                    margin-top: 20px;
-                }
-                .project-card {
-                    flex: 1 1 clamp(220px, 33%, 350px);
-                    background-color: rgb(216, 223, 247);
-                    border: 1px solid;
-                    padding: 15px;
-                    border-radius: 8px;
-                    box-shadow: 1px 2px 4px rgb(69, 90, 151);
-                }
-                .project-card img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 4px;
-                }
-                .project-card h3 {
-                    margin-top: 10px;
-                    font-size: 1.1rem;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    color:rgb(120, 97, 181)
-                }
-                .project-card p {
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    color:rgb(45, 38, 123)
-                }
-            </style>
-  
             <div class="flex-container">
                 <div class="project-card">
                     <img src="images/stage4-christmasfelt.png" alt="Photo of Student's Felt Christmas Tree Decoration for Year 7 Textiles">
@@ -91,6 +47,12 @@
             </div>
         </section>
     </main>
+    <!--This is the footer section for my page-->
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Gemma Watson. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -3,59 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemma Watson</title>
+    <title>Gemma's Teaching Portfolio | About Me</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
-<body style="background-color:aliceblue;">
+<body>
     <!--this is my main heading for the page-->
     <header>
-        <h1 style="color:cadetblue; font-family:'Times New Roman', Times, serif;">About Me</h1>
+        <h1>About Me</h1>
     </header>
-    <!--Navigation menu style-->
-    <style>
-        nav {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding: 5px;
-        }
-
-        nav ul li a {
-            color: #1B5FA3;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-        }
-    </style>
     <!--Navigation menu section-->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!--This is the main content of my page-->
     <main>
-        <!--This is my profile picture-->
+        <!--Description about myself-->
         <section>
-            <img src="images/profile.png" style="width:250px;height:250px;">
+            <article class="profile">
+                <div class="profile-text">
+                    <p>My name is <strong>Gemma Watson</strong> and I am a Pre-Service teacher studying at the <a href="https://www.acu.edu.au" target="_blank">Australian Catholic University.</a></p>
+                    <h2>My Background</h2>
+                    <p>
+                    My name is <strong>Gemma Watson</strong> and I am currently studying a <strong>Bachelor of Education (Secondary) and a Bachelor of Design and Innovation Technologies,</strong> specialising in <strong>Textiles, Food Technology, and Computing,</strong> which are part of the NESA curriculum, <a href="https://educationstandards.nsw.edu.au/wps/portal/nesa/k-10/learning-areas/tas">Nesa Syllabus</a>. I have always loved working with my hands, creating unique designs, and exploring how technology can be used creatively. My background as a high-level gymnast taught me discipline, focus, and resilience, which I now bring into the classroom. This experience shaped who I am and sparked my interest in helping others discover their own passions through learning. I believe education should be engaging, empowering, and inclusive for every student.</p>
+                    <p>
+                    As a pre-service teacher, I am passionate about <strong>creating safe, supportive spaces</strong> where students feel <em>seen, challenged, and inspired.</em> My lessons are interactive and hands-on, often blending design thinking, real-world contexts, and opportunities for creativity. I especially enjoy teaching in project-based subjects like Design and Technology, where students can see their ideas come to life. I'm also committed to making learning accessible for diverse learners, including those who are EAL/D or need additional support. I want students to leave my classroom feeling capable and confident, not just in what they know, but in who they are becoming.</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="images/profilepic1.png" alt="photo of Gemma in a polaroid border">
+                </div>
+            </article>
         </section>
         <!--This is the description of the tile-->
         <section>
-            <h2 style="color:steelblue; font-family:'Arial Nova', Arial, sans-serif; font-size:18px;">These are my main teaching areas</h2>
+            <h2>These are my main teaching areas</h2>
         </section>
         <!--Infographic tile-->
         <section>
             <img src="images/tile.png" style="width:500px;height:200px;">
-        </section>
-        <!--Description about myself-->
-        <section>
-            <p style="color:rgb(67, 89, 146); font-family:'Arial Nova', Arial, sans-serif; font-size:13px;">
-            My name is <strong>Gemma Watson</strong> and I am currently studying a <strong>Bachelor of Education (Secondary) and a Bachelor of Design and Innovation Technologies,</strong> specialising in <strong>Textiles, Food Technology, and Computing,</strong> which are part of the NESA curriculum,<a href="https://educationstandards.nsw.edu.au/wps/portal/nesa/k-10/learning-areas/tas"> Nesa Syllabus </a>. I have always loved working with my hands, creating unique designs, and exploring how technology can be used creatively. My background as a high-level gymnast taught me discipline, focus, and resilience, which I now bring into the classroom. This experience shaped who I am and sparked my interest in helping others discover their own passions through learning. I believe education should be engaging, empowering, and inclusive for every student.</p>
-            <p style="color:rgb(67, 89, 146); font-family:'Arial Nova', Arial, sans-serif; font-size:13px;">
-            As a pre-service teacher, I am passionate about <strong>creating safe, supportive spaces</strong> where students feel <em>seen, challenged, and inspired.</em> My lessons are interactive and hands-on, often blending design thinking, real-world contexts, and opportunities for creativity. I especially enjoy teaching in project-based subjects like Design and Technology, where students can see their ideas come to life. I'm also committed to making learning accessible for diverse learners, including those who are EAL/D or need additional support. I want students to leave my classroom feeling capable and confident, not just in what they know, but in who they are becoming.</p>
         </section>
         <!--This section is focused on my practicum placement overview in table format-->
         <section>
@@ -88,12 +82,7 @@
                     background-color:rgb(242, 251, 249);
                 }
 
-                h2 {
-                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 1.4rem;
-                    margin-bottom: 8px;
-                    color:cornflowerblue;
-                }
+            
             </style>
             <h2>Practicum Placement Overview</h2>
             <table>
@@ -152,5 +141,11 @@
             </table>
         </section>
     </main>
+    <!--This is the footer section for my page-->
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Gemma Watson. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

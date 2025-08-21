@@ -1,0 +1,31 @@
+h1 {
+    color:cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile-text {
+    color:rgb(67, 89, 146); 
+    font-family:'Arial Nova', Arial, sans-serif; 
+    font-size:15px;
+}
+
+.profile-photo {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.profile-text a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: underline;
+}
