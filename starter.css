@@ -197,22 +197,24 @@ table {
   width: 100%;                /* Table spans full width */
   border-collapse: collapse;  /* Removes double borders */
   margin-top: 10px;           /* Space above table */
-  font-family: Arial, sans-serif;     /* Table font */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;     /* Table font */
 }
 th, td {
   border: 1px solid #ccc;   /* Light grey cell borders */
-  padding: 10px 12px;         /* Space inside cells */
+  padding: 10px 13px;         /* Space inside cells */
   text-align: left;           /* Aligns text to the left */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 thead {
-  background-color: #f0f0f0; /* Light grey header background */
+  background-color: cadetblue; /* Light blue header background */
 }
 th {
-  color: #333;              /* Dark grey header text */
+  color: aliceblue;              /* Blue header text */
   font-weight: bold;          /* Bold header text */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 tr:nth-child(even) {
-  background-color: #fafafa;  /* Zebra stripe effect for even rows */
+  background-color:rgb(242, 251, 249);  /* Zebra stripe effect for even rows */
 }
 .flex-container {
   display: flex;                    /* Horizontal flex layout */
