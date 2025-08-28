@@ -8,7 +8,8 @@
 
 /* ---------- 1) CSS Reset / Base ----------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Outfit:wght@100..900&display=swap'); /* Google Fonts*/
 
 *, *::before, *::after {
   box-sizing: border-box;   /* Include padding & border in total size for all elements + pseudo-elements */
@@ -36,8 +37,8 @@ img {
   --shadow: 0 4px 12px rgba(0,0,0,0.08);    /* Subtle shadow for depth */
   --spacing: 16px;         /* base spacing unit */
   --maxw: 1100px;          /* content width */
-  --font-body: Verdana, Geneva, Tahoma, sans-serif;  /* Body font */
-  --font-head: 'Arial Nova', Arial, sans-serif;   /* Headings font */
+  --font-body: 'Outfit', sans-serif;
+  --font-head: 'Belleza', sans-serif;
 }
 
 /* ---------- 3) Page Defaults --------------- */
@@ -114,7 +115,7 @@ nav {
   width: 100%;                    /* Spans full width */
   margin: 32px auto;              /* Space above page content; no top gap */
   margin-top: 0;                  /* Removes top gap above nav */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-head);
   padding: 5px;
 }
 nav .container {
@@ -148,7 +149,7 @@ nav a:focus-visible {
   outline-offset: 2px;                    /* outline offset for increased accessibility/ keyboard-focus styling */
 }
 .active {
-  background-color: grey;     /* Indicates active page link */
+  background-color: #8cb9c2bc;     /* Indicates active page link */
 }
 @media (max-width: 640px) {               /* responsiveness for viewing on mobile */
   nav .container { flex-wrap: wrap; }
@@ -197,13 +198,13 @@ table {
   width: 100%;                /* Table spans full width */
   border-collapse: collapse;  /* Removes double borders */
   margin-top: 10px;           /* Space above table */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;     /* Table font */
+  font-family: var(--font-body);     /* Table font */
 }
 th, td {
   border: 1px solid #ccc;   /* Light grey cell borders */
   padding: 10px 13px;         /* Space inside cells */
   text-align: left;           /* Aligns text to the left */
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-head);
 }
 thead {
   background-color: cadetblue; /* Light blue header background */
@@ -211,7 +212,7 @@ thead {
 th {
   color: aliceblue;              /* Blue header text */
   font-weight: bold;          /* Bold header text */
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: var(--font-head);
 }
 tr:nth-child(even) {
   background-color:rgb(242, 251, 249);  /* Zebra stripe effect for even rows */
@@ -239,7 +240,7 @@ tr:nth-child(even) {
 .project-card h3 {
   margin-top: 10px;     /* Space above heading */
   font-size: 1.1rem;    /* Slightly larger heading text */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Clean, modern font */
+  font-family: var(--font-head); /* Font head */
   color: #1f4165;     /* Dark grey-blue colour */
 }
 
