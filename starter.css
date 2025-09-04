@@ -226,7 +226,7 @@ tr:nth-child(even) {
 }
 .project-card {
   flex: 1 1 clamp(220px, 33%, 350px);         /* Flexible width that adapts to screen size */
-  background-color: rgb(203, 225, 246);     /* Light background colour for card */
+  background-color: rgba(197, 234, 246, 0.282);     /* Light background colour for card */
   border: 1px solid;                          /* Simple border to define edges */
   padding: 15px;                              /* Padding inside each card */
   border-radius: 8px;                         /* Rounded corners */

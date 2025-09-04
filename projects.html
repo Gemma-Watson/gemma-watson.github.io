@@ -15,35 +15,71 @@
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a class="active" href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
+
             </ul>
         </div>
     </nav>
     <!--This is the main content area for my page-->
     <main>
+        <!--These are the cards of projects completed at University-->
+        <section class="section">
+            <h2>My Projects</h2>
+            <p>These are examples of projects I have completed at University and their respective NESA Subject</p>
+            <div class="card-grid">
+                <!-- Project Card: Carriage Lamp -->
+                <article class="card">
+                    <img src="images/lamp.png" alt="Photo of Carriage Lamp">
+                    <div class="content">
+                        <h3>Industrial Technology - Lamp</h3>
+                        <p>This is a laser-cut and 3D printed lamp in the shape of a princess carriage targeted toward children. This aligns with <strong>Industrial Technology.</strong></p>
+                    </div>
+                </article>
+                <!-- Project Card: Medieval Outfit -->
+                <article class="card">
+                    <img src="images/medieval.png" alt="Photo of Medieval Outfit" style="height:600px; width: auto;">
+                    <div class="content">
+                        <h3>Textiles and Design - Medieval Outfit</h3>
+                        <p>I designed the navy blue outer layer: a surcoat and braided belt representing an outfit worn in Medieval Times. This aligns with <strong>Textiles.</strong></p>
+                    </div>
+                </article>
+                <!-- Project Card: Skort -->
+                <article class="card">
+                    <video controls muted style="width: 100%; border-radius: 4px;" poster="images/skortthumbnail.png">
+                        <source src="media/skortvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <h3>Textiles and Design - Skort Redesign</h3>
+                        <p>This is a redesign of an exercise skort transformed into a two piece skirt and short set. This aligns with <strong>Textiles.</strong></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--This is the section showcasing some projects/units in classes I have taught - in flexbox format-->
         <section>
             <h2>Student Projects</h2>
             <p>These are examples of student work in Stage 4 and Stage 5 Technology classes.</p>
         </section>
-        <!--This is the section showcasing some projects/units in classes I have taught - in flexbox format-->
         <section>
             <div class="flex-container">
+                <!-- Student Project: Felt Ornament -->
                 <div class="project-card">
                     <img src="images/stage4-christmasfelt.png" alt="Photo of Student's Felt Christmas Tree Decoration for Year 7 Textiles">
                     <h3>Stage 4 Materials Technology</h3>
                     <p>Year 7 Textiles Unit: Christmas Tree Felt Decoration</p>
                 </div>
+                <!-- Student Project: Chocolate Pear Pudding -->
                 <div class="project-card">
                     <img src="images/stage4-chocpearpudding.png" alt="Photo of Student's Chocolate Pear Pudding for Food Technology">
                     <h3>Stage 4 Food and Agricultre Technology</h3>
                     <p>Year 7 Food Technology Unit: Chocolate and Pear Pudding</p>
                 </div>
+                <!-- Student Project: Sushi Bowl -->
                 <div class="project-card">
                     <img src="images/stage5-sushibowl.png" alt="Photo of Student's Sushi Bowl for Year 9 Food Technology">
                     <h3>Stage 5 Food Technology</h3>
