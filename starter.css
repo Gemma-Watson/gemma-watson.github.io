@@ -26,7 +26,7 @@ img {
 
 /* ---------- 2) Core Theme Tokens ----------- */
 :root {
-  --brand:#6cccdc;        /* primary colour */
+  --brand:#57aab9;        /* primary colour */
   --brand-2: #0097b2;      /* accent colour */
   --bg: aliceblue;           /* page background */
   --head: rgb(205, 224, 240);         /* main header colour */
@@ -75,7 +75,7 @@ small {
 
 /* ---------- 5) Links ----------------------- */
 a { 
-  color: var(--brand);          /* Brand colour for links */
+  color: #4a8791;          /* Blue for links */
   text-decoration: none;        /* No underline by default */
 }
 a:hover, a:focus { 
@@ -110,14 +110,18 @@ header h1 {
   text-shadow: 2px 2px 6px rgba(27, 41, 61, 0.8);      /* subtle shadow behind text */
 }
 nav {
-  background: #d8ecfc;             /* Dark grey background for nav bar */
-  font-size: 0.95rem;             /* Slightly smaller font in navigation */
-  width: 100%;                    /* Spans full width */
-  margin: 32px auto;              /* Space above page content; no top gap */
-  margin-top: 0;                  /* Removes top gap above nav */
-  font-family: var(--font-head);
-  padding: 5px;
+  background: #d8ecfc;             /* Light blue background to visually separate the nav bar */
+  font-size: 0.95rem;              /* Slightly smaller font size for a more compact look */
+  width: 100%;                     /* Makes the nav bar stretch the full width of the page */
+  margin: 32px auto;               /* Adds vertical spacing around the nav, centres horizontally */
+  margin-top: 0;                   /* Overrides the top margin to remove space above the bar */
+  font-family: var(--font-head);   /* Uses the heading font defined in the CSS variables */
+  padding: 5px;                    /* Adds minimal internal spacing for breathing room */
+  position: sticky;                /* Makes the nav bar stick to the top on scroll */
+  top: 0;                          /* Defines where the sticky positioning begins (top of screen) */
+  z-index: 1000;                   /* Keeps the nav bar above other elements on the page */
 }
+
 nav .container {
   width: min(100% - 2*var(--spacing), var(--maxw));   /* Responsive container width */
   margin: 0 auto;                                     /* Centers content horizontally */
@@ -138,7 +142,7 @@ nav a {
   text-decoration: none;  /* Remove underline/other decorations from text/links */
   padding: 14px 16px;      /* Space inside link area */
   border-radius: 8px;     /* Slightly rounded corners */
-  font-weight: bold;
+  font-weight: bold;      /* Bold text*/
   font-size: 16px;
 }
 nav a:hover { 
@@ -243,6 +247,12 @@ tr:nth-child(even) {
   font-family: var(--font-head); /* Font head */
   color: #1f4165;     /* Dark grey-blue colour */
 }
+@media (max-width: 640px) {        /* responsiveness for viewing on mobile */
+  .flex-container, .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* ---------- 8) Cards / Gallery ------------- */
 .card-grid {
@@ -311,6 +321,7 @@ button, input[type="submit"] {
 }
 button:hover, input[type="submit"]:hover {
   background: #163d79;          /* Darker brand colour on hover */
+  transform: translateY(-1px); transition: transform .15s ease;   /* Moves up slightly on hover*/
 }
 .error {
   color: red;
