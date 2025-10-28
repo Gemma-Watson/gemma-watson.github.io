@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<!-- 
+Template: Escape Velocity by HTML5 UP 
+Author: AJ / @n33co 
+Source: https://html5up.net 
+License: Creative Commons Attribution 3.0 (https://html5up.net/license) 
 -->
 <html>
   <head>
@@ -14,7 +15,7 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="right-sidebar is-preload">
+  <body class="right-sidebar is-preload contact-page">
     <div id="page-wrapper">
       <!-- Header -->
       <section id="header" class="wrapper">
@@ -45,10 +46,13 @@
             <div class="col-8 col-12-medium">
               <!-- Content -->
               <div id="content">
-                <article class="box post">
+                <article class="box post contact-card-tight" style="text-align: center">
                   <header class="style1">
                     <h2>Get in Touch</h2>
-                    <p>blablaa</p>
+                    <p>
+                      I’d love to hear from you about teaching, design, or
+                      collaboration opportunities.
+                    </p>
                   </header>
                   <h3>Contact Information</h3>
                   <p>Email: gemma.watson@myacu.edu.au</p>
@@ -119,23 +123,7 @@
                     </form>
                   </div>
                 </section>
-                <script>
-                  // Why: client redirect on success
-                  document
-                    .getElementById("contact-form")
-                    .addEventListener("submit", async function (event) {
-                      event.preventDefault();
-                      const form = event.target;
-                      const data = new FormData(form);
-                      const response = await fetch(form.action, {
-                        method: form.method,
-                        body: data,
-                        headers: { Accept: "application/json" },
-                      });
-                      if (response.ok) window.location.href = "thanks.html";
-                      else alert("Something went wrong. Please try again.");
-                    });
-                </script>
+                <script type="module" src="assets/js/pagereset.js"></script>
 
                 <div class="row gtr-150">
                   <div class="col-6 col-12-small">
@@ -190,46 +178,82 @@
                         <a
                           href="mailto:gemma.watson@myacu.edu.au"
                           class="image left"
-                          ><img src="images/email.png" alt="Email Icon"
-                        /></a>
+                        >
+                          <img src="images/email.png" alt="Email Icon" />
+                        </a>
                         <h3>
-                          <a href="mailto:gemma.watson@myacu.edu.au"
-                            >Email Me</a
-                          >
+                          <a href="mailto:gemma.watson@myacu.edu.au">Email</a>
                         </h3>
                         <p>
+                          Click to send me an email
                           <a href="mailto:gemma.watson@myacu.edu.au"
                             >gemma.watson@myacu.edu.au</a
                           >
                         </p>
                       </article>
                     </li>
+
                     <li>
                       <article class="box post-excerpt">
-                        <a href="#" class="image left"
-                          ><img src="images/pic09.jpg" alt=""
-                        /></a>
-                        <h3><a href="#">Sed duis consequat</a></h3>
+                        <a
+                          href="https://www.linkedin.com/in/gemmawatsonnn"
+                          target="_blank"
+                          rel="noopener"
+                          class="image left"
+                        >
+                          <img src="images/linkedin.png" alt="LinkedIn Icon" />
+                        </a>
+                        <h3>
+                          <a
+                            href="https://www.linkedin.com/in/gemmawatsonnn"
+                            target="_blank"
+                            rel="noopener"
+                            >LinkedIn</a
+                          >
+                        </h3>
                         <p>
-                          Duis odio diam, luctus et vulputate vitae, vehicula ac
-                          dolor. Pellentesque at urna eget tellus sed etiam.
+                          Connect:
+                          <a
+                            href="https://www.linkedin.com/in/gemmawatsonnn"
+                            target="_blank"
+                            >linkedin.com/in/gemmawatsonnn</a
+                          >
                         </p>
                       </article>
                     </li>
+
                     <li>
                       <article class="box post-excerpt">
-                        <a href="#" class="image left"
-                          ><img src="images/pic10.jpg" alt=""
-                        /></a>
-                        <h3><a href="#">Tellus nulla volutpat</a></h3>
+                        <a
+                          href="https://www.instagram.com/ugc.gem"
+                          target="_blank"
+                          rel="noopener"
+                          class="image left"
+                        >
+                          <img
+                            src="images/instagram.png"
+                            alt="Instagram Icon"
+                          />
+                        </a>
+                        <h3>
+                          <a
+                            href="https://www.instagram.com/ugc.gem"
+                            target="_blank"
+                            rel="noopener"
+                            >Instagram</a
+                          >
+                        </h3>
                         <p>
-                          Duis odio diam, luctus et vulputate vitae, vehicula ac
-                          dolor. Pellentesque at urna eget tellus sed etiam.
+                          See my User Generated Content (UGC):
+                          <a
+                            href="https://www.instagram.com/ugc.gem"
+                            target="_blank"
+                            >@ugc.gem</a
+                          >
                         </p>
                       </article>
                     </li>
                   </ul>
-                  <a href="#" class="button style1">Archives</a>
                 </section>
                 <section class="box">
                   <header>
