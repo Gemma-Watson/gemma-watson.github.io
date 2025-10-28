@@ -1,77 +1,428 @@
 <!DOCTYPE html>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Gemma's Teaching Portfolio | Contact Me</title>
-    <link rel="stylesheet" href="starter.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-</head>
-<body>
-    <!--Header section for my contact page-->
-    <header>
-        <h1>Contact Me</h1>
-    </header>
-    <!--Navigation menu section-->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="worksamples.html">Samples of Work</a></li>
-                <li><a class="active" href="contact.html">Contact Me</a></li>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="right-sidebar is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <section id="header" class="wrapper">
+        <!-- Logo -->
+        <div id="logo">
+          <h1><a href="index.html">CONTACT</a></h1>
+          <p>Let's Connect</p>
+        </div>
 
-            </ul>
-        </div>
-    </nav>
-    <!--This is the main section for my contact page-->
-    <main>
-        <!--This is the section for...-->
-        <section class="section">
-            <h2>Get In Touch!</h2>
-            <form id="contact-form" action="https://formspree.io/f/meolrnqd" method="post" autocomplete="on">
-                <fieldset>
-                    <legend>Your details</legend>
-                    <!--Form text input for Full Name-->
-                    <label for="name">Full Name</label>
-                    <input id="name" name="name" type="text" placeholder="Jane Doe" required minlength="6">
-                    <!--Form text input for Email Address-->
-                    <label for="email">Email Address</label>
-                    <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
-                    <!--Form checkbox input for reason for contact-->
-                    <fieldset>
-                        <legend>Reason for contact (choose all that apply):</legend>
-                        <input id="reason-collab" name="reason" type="checkbox" value="collaboration">
-                        <label for="reason-collab">Interested in collaborating</label>
-                        <input id="reason-work" name="reason" type="checkbox" value="work">
-                        <label for="reason-work">Availability for work</label>
-                        <input id="reason-other" name="reason" type="checkbox" value="other">
-                        <label for="reason-other">Other</label>
-                    </fieldset>
-                    <!--Form text input for Message-->
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" type="message" placeholder="How can I help?" required minlength="8"></textarea>
-                    <!--Honey pot anti-spam field-->
-                    <input type="text" name="honey" tableindex="-1" aria-hidden="true" style="position:absolute;left:-9000px;">
-                    <!--Button tag used for input-->
-                    <button type="submit">Send</button>
-                </fieldset>
-            </form>
-        </section>
-        <!--This is the section for links to socials-->
-        <section class="section" aria-labelledby="socials">
-            <h2 id="socials">Add me on Socials</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/gemmawatsonnn/" target="_blank" rel="noopener">LinkedIn</a></li>
-            </ul>
-        </section>
-    </main>
-    <!--This is the footer section for my page-->
-    <footer>
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="worksamples.html">Samples of Work</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Main -->
+      <section id="main" class="wrapper style2">
+        <div class="title">Contact</div>
         <div class="container">
-            <p> &copy; 2025 Gemma Watson. All rights reserved.</p>
+          <div class="row gtr-150">
+            <div class="col-8 col-12-medium">
+              <!-- Content -->
+              <div id="content">
+                <article class="box post">
+                  <header class="style1">
+                    <h2>Get in Touch</h2>
+                    <p>blablaa</p>
+                  </header>
+                  <h3>Contact Information</h3>
+                  <p>Email: gemma.watson@myacu.edu.au</p>
+                  <p>Phone: 0422 284 475</p>
+                  <p>Location: North Turramurra, 2074</p>
+                </article>
+
+                <!-- Contact Form -->
+                <section class="section">
+                  <h2>Contact</h2>
+                  <div class="contact-card">
+                    <form
+                      id="contact-form"
+                      action="https://formspree.io/f/meolrnqd"
+                      method="post"
+                    >
+                      <fieldset>
+                        <label for="name">Full Name</label>
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          placeholder="Jane Doe"
+                          required
+                          minlength="6"
+                        />
+
+                        <label for="email">Email Address</label>
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="name@example.com"
+                          required
+                          autocomplete="email"
+                        />
+
+                        <div>
+                          <label for="subject">Subject</label>
+                          <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="question">General Question</option>
+                          </select>
+                        </div>
+
+                        <label for="message">Message</label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="How can I help?"
+                          required
+                          minlength="8"
+                        ></textarea>
+
+                        <!-- honeypot -->
+                        <input
+                          type="text"
+                          name="honey"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="position: absolute; left: -9000px"
+                        />
+
+                        <button type="submit">Send</button>
+                      </fieldset>
+                    </form>
+                  </div>
+                </section>
+                <script>
+                  // Why: client redirect on success
+                  document
+                    .getElementById("contact-form")
+                    .addEventListener("submit", async function (event) {
+                      event.preventDefault();
+                      const form = event.target;
+                      const data = new FormData(form);
+                      const response = await fetch(form.action, {
+                        method: form.method,
+                        body: data,
+                        headers: { Accept: "application/json" },
+                      });
+                      if (response.ok) window.location.href = "thanks.html";
+                      else alert("Something went wrong. Please try again.");
+                    });
+                </script>
+
+                <div class="row gtr-150">
+                  <div class="col-6 col-12-small">
+                    <section class="box">
+                      <header>
+                        <h2>Let's Connect</h2>
+                      </header>
+                      <a href="#" class="image featured"
+                        ><img src="images/pic05.jpg" alt=""
+                      /></a>
+                      <p>I'm always open to new ideas and projects.</p>
+                      <a href="#" class="button style1">View Portfolio</a>
+                    </section>
+                  </div>
+                  <div class="col-6 col-12-small">
+                    <section class="box">
+                      <header>
+                        <h2>Quick Links</h2>
+                      </header>
+                      <a href="#" class="image featured"
+                        ><img src="images/pic06.jpg" alt=""
+                      /></a>
+                      <p>
+                        Rutrum bibendum. Proin pellentesque diam non ligula
+                        commodo tempor. Vivamus eget urna nibh. Curabitur non
+                        fringilla nisl. Donec accumsan interdum nisi, quis
+                        tempus.
+                      </p>
+                      <a href="#" class="button style1">More</a>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-12-medium">
+              <!-- Sidebar -->
+              <div id="sidebar">
+                <section class="box">
+                  <header>
+                    <h2>Let's Connect</h2>
+                  </header>
+                  <p>I'm always open to new ideas and projects.</p>
+                  <a href="#" class="button style1">View Portfolio</a>
+                </section>
+                <section class="box">
+                  <header>
+                    <h2>Quick Links</h2>
+                  </header>
+                  <ul class="style2">
+                    <li>
+                      <article class="box post-excerpt">
+                        <a
+                          href="mailto:gemma.watson@myacu.edu.au"
+                          class="image left"
+                          ><img src="images/email.png" alt="Email Icon"
+                        /></a>
+                        <h3>
+                          <a href="mailto:gemma.watson@myacu.edu.au"
+                            >Email Me</a
+                          >
+                        </h3>
+                        <p>
+                          <a href="mailto:gemma.watson@myacu.edu.au"
+                            >gemma.watson@myacu.edu.au</a
+                          >
+                        </p>
+                      </article>
+                    </li>
+                    <li>
+                      <article class="box post-excerpt">
+                        <a href="#" class="image left"
+                          ><img src="images/pic09.jpg" alt=""
+                        /></a>
+                        <h3><a href="#">Sed duis consequat</a></h3>
+                        <p>
+                          Duis odio diam, luctus et vulputate vitae, vehicula ac
+                          dolor. Pellentesque at urna eget tellus sed etiam.
+                        </p>
+                      </article>
+                    </li>
+                    <li>
+                      <article class="box post-excerpt">
+                        <a href="#" class="image left"
+                          ><img src="images/pic10.jpg" alt=""
+                        /></a>
+                        <h3><a href="#">Tellus nulla volutpat</a></h3>
+                        <p>
+                          Duis odio diam, luctus et vulputate vitae, vehicula ac
+                          dolor. Pellentesque at urna eget tellus sed etiam.
+                        </p>
+                      </article>
+                    </li>
+                  </ul>
+                  <a href="#" class="button style1">Archives</a>
+                </section>
+                <section class="box">
+                  <header>
+                    <h2>Magna diam vehicula</h2>
+                  </header>
+                  <ul class="style3">
+                    <li><a href="#">Nulla iaculis egestas varius</a></li>
+                    <li><a href="#">Augue massa feugiat quam pretium</a></li>
+                    <li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+                    <li><a href="#">Sed hendrerit massa nam mattis</a></li>
+                    <li><a href="#">Turpis vel leo accumsan aliquet</a></li>
+                    <li><a href="#">Dapibus mi fermentum fusce non</a></li>
+                    <li><a href="#">Arcu laoreet sapien tempus</a></li>
+                    <li><a href="#">Nulla iaculis egestas varius</a></li>
+                    <li><a href="#">Augue massa feugiat quam pretium</a></li>
+                    <li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+                    <li><a href="#">Sed hendrerit massa nam mattis</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-</body>
+      </section>
+
+      <!-- Highlights -->
+      <section id="highlights" class="wrapper style3">
+        <div class="title">The Endorsements</div>
+        <div class="container">
+          <div class="row aln-center">
+            <div class="col-4 col-12-medium">
+              <section class="highlight">
+                <a href="#" class="image featured"
+                  ><img src="images/pic02.jpg" alt=""
+                /></a>
+                <h3><a href="#">Aliquam diam consequat</a></h3>
+                <p>
+                  Eget mattis at, laoreet vel amet sed velit aliquam diam ante,
+                  dolor aliquet sit amet vulputate mattis amet laoreet lorem.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button style1">Learn More</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-4 col-12-medium">
+              <section class="highlight">
+                <a href="#" class="image featured"
+                  ><img src="images/pic03.jpg" alt=""
+                /></a>
+                <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+                <p>
+                  Eget mattis at, laoreet vel amet sed velit aliquam diam ante,
+                  dolor aliquet sit amet vulputate mattis amet laoreet lorem.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button style1">Learn More</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-4 col-12-medium">
+              <section class="highlight">
+                <a href="#" class="image featured"
+                  ><img src="images/pic04.jpg" alt=""
+                /></a>
+                <h3><a href="#">Mattis tempus lorem</a></h3>
+                <p>
+                  Eget mattis at, laoreet vel amet sed velit aliquam diam ante,
+                  dolor aliquet sit amet vulputate mattis amet laoreet lorem.
+                </p>
+                <ul class="actions">
+                  <li><a href="#" class="button style1">Learn More</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer" class="wrapper">
+        <div class="title">The Rest Of It</div>
+        <div class="container">
+          <header class="style1">
+            <h2>Ipsum sapien elementum portitor?</h2>
+            <p>
+              Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis
+              nunc in aliquet.<br />
+              Nam pharetra laoreet imperdiet volutpat etiam feugiat.
+            </p>
+          </header>
+          <div class="row">
+            <div class="col-6 col-12-medium">
+              <!-- Contact Form -->
+              <section>
+                <form method="post" action="#">
+                  <div class="row gtr-50">
+                    <div class="col-6 col-12-small">
+                      <input
+                        type="text"
+                        name="name"
+                        id="contact-name"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-6 col-12-small">
+                      <input
+                        type="text"
+                        name="email"
+                        id="contact-email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        name="message"
+                        id="contact-message"
+                        placeholder="Message"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <ul class="actions">
+                        <li>
+                          <input type="submit" class="style1" value="Send" />
+                        </li>
+                        <li>
+                          <input type="reset" class="style2" value="Reset" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </div>
+            <div class="col-6 col-12-medium">
+              <!-- Contact -->
+              <section class="feature-list small">
+                <div class="row">
+                  <div class="col-6 col-12-small">
+                    <section>
+                      <h3 class="icon solid fa-home">Mailing Address</h3>
+                      <p>
+                        Untitled Corp<br />
+                        1234 Somewhere Rd<br />
+                        Nashville, TN 00000
+                      </p>
+                    </section>
+                  </div>
+                  <div class="col-6 col-12-small">
+                    <section>
+                      <h3 class="icon solid fa-comment">Social</h3>
+                      <p>
+                        <a href="#">@untitled-corp</a><br />
+                        <a href="#">linkedin.com/untitled</a><br />
+                        <a href="#">facebook.com/untitled</a>
+                      </p>
+                    </section>
+                  </div>
+                  <div class="col-6 col-12-small">
+                    <section>
+                      <h3 class="icon solid fa-envelope">Email</h3>
+                      <p>
+                        <a href="#">info@untitled.tld</a>
+                      </p>
+                    </section>
+                  </div>
+                  <div class="col-6 col-12-small">
+                    <section>
+                      <h3 class="icon solid fa-phone">Phone</h3>
+                      <p>(000) 555-0000</p>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div id="copyright">
+            <ul>
+              <li>&copy; Untitled.</li>
+              <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
