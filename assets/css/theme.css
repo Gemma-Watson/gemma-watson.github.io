@@ -1,0 +1,519 @@
+/* File: assets/css/theme.css */
+/* Minimal toggle UI */
+/* Paste into assets/css/theme.css (replace your existing .theme-toggle block) */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  height: 2.25rem;
+  padding: 0 0.9rem;
+  line-height: 1;
+
+  border: 1px solid transparent;
+  background: #193a50;
+  color: #eaf6f5;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  /* fix minor baseline quirks inside list items */
+  vertical-align: middle;
+}
+.theme-toggle:hover {
+  opacity: 0.85;
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Footer context: prevent surrounding list styling from nudging the button */
+#copyright .theme-toggle {
+  margin: 0; /* kill accidental vertical offsets */
+}
+
+/* Smoothen only if allowed */
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body,
+  * {
+    transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+}
+/* ========= DARK THEME (curated, not inverted) ========= */
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* 0) Base */
+html[data-theme="dark"] body {
+  background: #375261; /* deep blue-grey */
+  color: #b2c0c6; /* soft light text (was #6d9699) */
+}
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #d7eef1; /* headings pop (was #0f2d2f) */
+}
+html[data-theme="dark"] a {
+  color: #3d948d;
+}
+html[data-theme="dark"] a:hover {
+  color: #a6e0db;
+}
+html[data-theme="dark"] hr {
+  border-top-color: #1d2a31;
+}
+
+/* 1) Header (banner image stays bright; add subtle dark veil) */
+html[data-theme="dark"] #header:before {
+  background: rgba(29, 36, 74, 0.4);
+}
+html[data-theme="dark"] #logo h1 {
+  color: #eaf6f5;
+}
+html[data-theme="dark"] #logo p {
+  color: #a5c9cc;
+}
+#logo h1,
+#logo h1 a {
+  color: #eaf6f5;
+}
+
+/* 2) Nav + dropdown */
+html[data-theme="dark"] #nav > ul {
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.04);
+}
+html[data-theme="dark"] #nav > ul > li > a,
+html[data-theme="dark"] #nav > ul > li > span {
+  color: #d5dde0;
+}
+html[data-theme="dark"] #nav > ul > li:hover > a {
+  color: #f0d7a8;
+} /* warm hover echo of light theme */
+html[data-theme="dark"] #nav > ul > li.current > a,
+html[data-theme="dark"] #nav > ul > li.current > span {
+  color: #8fd8d1;
+}
+
+html[data-theme="dark"] .dropotron {
+  background: rgba(17, 22, 28, 0.96);
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.06);
+}
+html[data-theme="dark"] .dropotron a,
+html[data-theme="dark"] .dropotron span {
+  color: rgba(255, 255, 255, 0.85);
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* 3) Wrapper stripes (style1/2/3) mapped to dark counterparts */
+html[data-theme="dark"] .wrapper.style1 {
+  background: linear-gradient(to bottom, #0f1820 0%, #1b2f39 45%, #30515f 100%);
+  color: #cdd7db;
+}
+html[data-theme="dark"] .wrapper.style1 .title {
+  background: #0f1820;
+  color: #e7eef1;
+}
+
+html[data-theme="dark"] .wrapper.style2 {
+  background: #294351;
+}
+html[data-theme="dark"] .wrapper.style2 .title {
+  background: #294351;
+  color: #e7eef1;
+}
+
+html[data-theme="dark"] .wrapper.style3 {
+  background: #112029; /* darker minty panel */
+  color: #d2dcdf;
+}
+html[data-theme="dark"] .wrapper.style3 .title {
+  background: #112029;
+  color: #e7eef1;
+}
+html[data-theme="dark"] .wrapper.style3 .image {
+  border-color: #111827;
+}
+
+/* 4) Features */
+html[data-theme="dark"] #features h3,
+html[data-theme="dark"] #features h3 a,
+html[data-theme="dark"] #features .feature-list h3 {
+  color: #e2eef0 !important;
+}
+html[data-theme="dark"] #features h3.icon::before {
+  color: #96b2c6;
+  opacity: 0.9;
+}
+
+/* 5) Buttons: mirror your style1/2/3 tones in dark */
+html[data-theme="dark"] .button,
+html[data-theme="dark"] button,
+html[data-theme="dark"] input[type="button"],
+html[data-theme="dark"] input[type="submit"],
+html[data-theme="dark"] input[type="reset"] {
+  background: #20373c; /* base button bg (echo of #3d5f66) */
+  color: #e7eef1;
+}
+html[data-theme="dark"] .button:hover,
+html[data-theme="dark"] button:hover {
+  filter: brightness(1.05);
+}
+
+/* style1: aqua block (was #7fb9b2) */
+html[data-theme="dark"] .button.style1 {
+  background: #193a50;
+  color: #ffffff !important;
+}
+html[data-theme="dark"] .button.style1:hover {
+  background: #0f2330;
+}
+html[data-theme="dark"] .button.style1:active {
+  background: #1d5e58;
+}
+
+/* style2: ghost/outline */
+html[data-theme="dark"] .button.style2 {
+  background: none;
+  color: #d6e5e4;
+  box-shadow: inset 0 0 0 2px #61757a;
+}
+html[data-theme="dark"] .button.style2:hover {
+  box-shadow: inset 0 0 0 2px #6b8084;
+}
+html[data-theme="dark"] .button.style2:active {
+  box-shadow: inset 0 0 0 2px #9ab1b6;
+}
+
+/* style3: deep teal block (was #3d5f66) */
+html[data-theme="dark"] .button.style3 {
+  background: #2a394b;
+  color: #ffffff;
+}
+html[data-theme="dark"] .button.style3:hover {
+  background: #1b2530;
+}
+html[data-theme="dark"] .button.style3:active {
+  background: #1a2d32;
+}
+
+/* 6) Tables */
+html[data-theme="dark"] table.default {
+  background: #1b2731;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+html[data-theme="dark"] table.default thead {
+  background: rgb(45, 80, 94); /* echo of #b9dedd */
+  color: #e7eef1;
+}
+html[data-theme="dark"] table.default th,
+html[data-theme="dark"] table.default td {
+  border-bottom: 1px solid #132027;
+}
+html[data-theme="dark"] table.default tbody tr:nth-child(even) {
+  background: #23313d;
+}
+html[data-theme="dark"] table.default tbody tr:hover {
+  background: #132027;
+}
+
+/* Paste at the end of assets/css/theme.css */
+html[data-theme="dark"] table.default tbody td:first-child {
+  color: #3d948d;
+}
+
+/* 7) Cards / misc surfaces */
+html[data-theme="dark"] .contact-card,
+html[data-theme="dark"] .countdown-box {
+  background: #14232b;
+  border: 1px solid #14242b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+html[data-theme="dark"] .subtext,
+html[data-theme="dark"] .unit-content,
+html[data-theme="dark"] .countdown-heading {
+  color: #b6c8cc;
+}
+
+/* 8) Forms */
+html[data-theme="dark"] form label {
+  color: #e1eaed;
+}
+html[data-theme="dark"] form input[type="text"],
+html[data-theme="dark"] form input[type="email"],
+html[data-theme="dark"] form input[type="password"],
+html[data-theme="dark"] form select,
+html[data-theme="dark"] form textarea {
+  background: #1b2b39;
+  color: #e7eef1;
+  box-shadow: inset 0 0 1px 0 #314249;
+}
+html[data-theme="dark"] form input[type="text"]:focus,
+html[data-theme="dark"] form input[type="email"]:focus,
+html[data-theme="dark"] form input[type="password"]:focus,
+html[data-theme="dark"] form select:focus,
+html[data-theme="dark"] form textarea:focus {
+  background: #121b21;
+}
+
+/* 9) Footer */
+html[data-theme="dark"] #footer {
+  background-color: #1e3240; /* dark counterpart of #3d5f66 */
+  color: rgba(255, 255, 255, 0.7);
+}
+html[data-theme="dark"] #footer .title {
+  background: #0f1920;
+  color: #e7eef1;
+}
+html[data-theme="dark"] #footer hr {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+html[data-theme="dark"] #footer a {
+  color: #cfe9e7;
+}
+html[data-theme="dark"] #footer a:hover {
+  color: #e3f5f3;
+}
+
+html[data-theme="dark"] #copyright ul {
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.35);
+}
+html[data-theme="dark"] #copyright ul li {
+  border-left-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Accordion (dark theme) ===== */
+html[data-theme="dark"] .unit-accordion {
+  background: transparent;
+}
+
+html[data-theme="dark"] .unit-item {
+  border-bottom: 1px solid #203945; /* matches table/footer borders */
+}
+
+/* Header row (click target) */
+html[data-theme="dark"] .unit-header {
+  color: #d7eef1; /* headings tint */
+  background: transparent;
+}
+html[data-theme="dark"] .unit-header:hover,
+html[data-theme="dark"] .unit-header:focus {
+  background: #294351; /* same family as wrapper.style2 */
+  color: #eaf6f5;
+  outline: none;
+}
+html[data-theme="dark"] .unit-header:focus-visible {
+  outline: 2px solid #87d0ca; /* accessible focus */
+  outline-offset: 2px;
+}
+
+/* Title text inside header */
+html[data-theme="dark"] .unit-title {
+  color: inherit;
+}
+
+/* Chevron caret */
+html[data-theme="dark"] .chevron {
+  border-right: 3px solid #87d0ca; /* accent teal */
+  border-bottom: 3px solid #87d0ca;
+}
+/* When open, keep accent color */
+html[data-theme="dark"] .unit-item.open .chevron {
+  border-right-color: #cfe9e7;
+  border-bottom-color: #cfe9e7;
+}
+
+/* Body/content area */
+html[data-theme="dark"] .unit-content {
+  display: none; /* unchanged; JS toggles it */
+  color: #b2c0c6; /* paragraph/body color */
+  background: transparent;
+}
+html[data-theme="dark"] .unit-content h1 {
+  color: #d7eef1; /* section heading inside content */
+}
+html[data-theme="dark"] .unit-content h2 {
+  color: #e3eaed;
+}
+html[data-theme="dark"] .unit-content p {
+  color: #b2c0c6;
+}
+html[data-theme="dark"] .unit-content ul {
+  color: #eaf6f5; /* list bullets/text slightly brighter */
+}
+html[data-theme="dark"] .unit-content li {
+  color: #c7d3d8;
+}
+
+/* Divider tone used around accordion areas (if any) */
+html[data-theme="dark"] .unit-item + .unit-item {
+  border-top-color: #203945;
+}
+
+/* Worksamples page density tweaks in dark (keeps your existing spacing) */
+html[data-theme="dark"] body.worksamples-page .unit-header {
+  background: transparent;
+}
+html[data-theme="dark"] body.worksamples-page .unit-content {
+  background: transparent;
+}
+
+/* ===== Mobile-friendly toggle & footer layout ===== */
+
+/* 1) Touch devices: bigger tap target (WCAG ~44px) */
+@media (pointer: coarse) {
+  .theme-toggle {
+    height: 2.75rem; /* taller button */
+    padding: 0 1.1rem;
+    font-size: 1rem; /* slightly larger text */
+  }
+}
+
+/* 2) Narrow screens: allow the button to align nicely */
+@media (max-width: 480px) {
+  #copyright ul {
+    justify-content: center; /* center on small screens */
+  }
+  .theme-toggle {
+    width: auto;
+  }
+}
+
+/* 3) Active/pressed feedback (works on touch; no hover needed) */
+.theme-toggle:active {
+  filter: brightness(1.12);
+}
+
+.theme-toggle {
+  background: #193a50;
+  border: 1px solid #193a50;
+  color: #eaf6f5;
+}
+
+/* Footer pill: hard override against #footer button rules in main.css */
+#footer .theme-toggle,
+#copyright .theme-toggle {
+  background: #193a50 !important;
+  border: 1px solid #193a50 !important;
+  color: #eaf6f5 !important;
+}
+
+#footer .theme-toggle:hover {
+  filter: brightness(1.08) !important;
+}
+#footer .theme-toggle:active {
+  filter: brightness(1.12) !important;
+}
+#footer .theme-toggle:focus-visible {
+  outline: 2px solid #eaf6f5 !important;
+  outline-offset: 2px !important;
+}
+
+/* ===== Projects page: H3 headings ===== */
+
+/* Main project block titles */
+.projects-page .proj-block h3 {
+  color: #193a50; /* light theme heading color */
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin: 0 0 0.4rem 0; /* tidy spacing */
+}
+
+/* If the h3 contains a link */
+.projects-page .proj-block h3 a {
+  color: inherit; /* matches the h3 color */
+  text-decoration: none;
+}
+.projects-page .proj-block h3 a:hover,
+.projects-page .proj-block h3 a:focus {
+  text-decoration: underline;
+}
+
+/* Sidebar h3 on projects page */
+.projects-page aside h3 {
+  color: #193a50;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin: 0 0 0.35rem 0;
+}
+
+/* ----- Dark theme equivalents ----- */
+html[data-theme="dark"] .projects-page .proj-block h3,
+html[data-theme="dark"] .projects-page aside h3 {
+  color: #d7eef1; /* readable on your #375261 base */
+}
+
+html[data-theme="dark"] .projects-page .proj-block h3 a,
+html[data-theme="dark"] .projects-page aside h3 a {
+  color: #8fd8d1; /* teal accent for links in h3 */
+}
+html[data-theme="dark"] .projects-page .proj-block h3 a:hover,
+html[data-theme="dark"] .projects-page aside h3 a:hover {
+  color: #cfe9e7; /* lighter on hover */
+  text-decoration: underline;
+}
+
+/* ===== Projects page: H2 headings ===== */
+
+/* Hero/section lead title */
+.projects-page .section-lead h2 {
+  color: #193a50; /* light theme */
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Any h2 inside project blocks (future-proof) */
+.projects-page .proj-block h2 {
+  color: #193a50;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin: 0 0 0.4rem 0;
+}
+
+/* Sidebar h2 (About/Skills/Teaching cards) */
+.projects-page aside h2 {
+  color: #193a50;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Links inside h2s adopt heading color */
+.projects-page h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.projects-page h2 a:hover,
+.projects-page h2 a:focus {
+  text-decoration: underline;
+}
+
+/* ----- Dark theme equivalents ----- */
+html[data-theme="dark"] .projects-page .section-lead h2,
+html[data-theme="dark"] .projects-page .proj-block h2,
+html[data-theme="dark"] .projects-page aside h2 {
+  color: #d7eef1; /* readable on #375261 */
+}
+
+html[data-theme="dark"] .projects-page h2 a {
+  color: #8fd8d1; /* teal accent for links in h2 */
+}
+html[data-theme="dark"] .projects-page h2 a:hover {
+  color: #cfe9e7;
+  text-decoration: underline;
+}
