@@ -1,47 +1,82 @@
 # gemmawatson
 
-This is the personal portfolio website of Gemma Watson, a pre-service secondary teacher specialising in **Textiles**, **Design and Technology**, **Computing**, and **Food Technology**. The site showcases professional capabilities in lesson planning, curriculum design, and creative project development.
+This is the personal portfolio website of Gemma Watson, a pre-service secondary teacher specialising in Textiles, Design and Technology, Computing, and Food Technology. The site presents work samples, teaching resources, creative projects, and digital development skills. It is designed as a professional space for employment, accreditation, and industry networking.
 
 ## Overview
 
 This website includes:
 
-- A personal introduction and teaching philosophy
-- A curated selection of written work samples and unit plans
-- A visual showcase of university and student-led projects
-- A downloadable resume
-- A professional contact form powered by Formspree
+- A professional introduction and teaching philosophy
+- Written lesson plans and curriculum-aligned resources
+- University and personal creative project work
+- Practical teaching artefacts such as unit plans and assessment tasks
+- A downloadable resume and contact section
+- Interactive web features to demonstrate technical capability
 
-## Features
+The site functions as both a digital portfolio and a long-term career tool. It reflects values of student centred learning, thoughtful design, literacy support, and future focused technology integration.
 
-- Responsive layout using HTML and CSS (no frameworks)
-- Semantic, accessible structure with image alt text and clear navigation
-- Flexbox and CSS Grid used for card layouts
-- PDF and media embedding
-- Backend-free contact form using Formspree
+## Key Features
+
+- Clean and responsive layout using custom HTML and CSS
+- Semantic structure for accessibility and logical reading order
+- Flexbox and CSS Grid for structured and adaptable sections
+- JavaScript features including:
+  - Graduation countdown timer
+  - Accordion lesson display
+  - Client-side form validation
+  - Light and dark theme toggle with saved user preference
+- Support for images, video, and PDF preview
+- Optimised for GitHub Pages and static hosting
+- Clear file structure for ongoing site expansion
 
 ## Pages
 
-- `index.html` – Homepage introduction
-- `about.html` – Background and teaching journey
-- `resume.html` – Downloadable resume
-- `projects.html` – Project showcase from university and school placements
-- `worksamples.html` – Written lesson plans and syllabus work
-- `contact.html` – Contact form connected to Formspree
+- `index.html` Welcome and site introduction
+- `about.html` Teacher identity, background, and philosophy
+- `resume.html` Downloadable resume and key skills
+- `projects.html` Project gallery from university and school settings
+- `worksamples.html` Lesson plans, resources, and syllabus-aligned materials
+- `contact.html` Contact form and professional links
 
 ## Folder Structure
-The website is organised into the following folders:
 
-- `/images` – Contains all preview images, thumbnails, and assets used on card elements and other visual sections.
-- `/media` – Contains video files, such as the skort redesign video displayed in the Projects section.
-- `/docs` – Includes downloadable PDFs, such as lesson plans, sample units, the Stage 6 syllabus, and your resume.
+- `/assets/css` Style sheets for layout and theme control
+- `/assets/js` JavaScript files for site behaviour
+- `/images` All graphics, icons, and photos used across the site
+- `/media` Video files, including textiles and digital design project clips
+- `/docs` Downloadable PDF,s such as portfolio samples and resume
 
-## Contact Form Integration
+## Technology Stack
 
-The contact form uses [Formspree](https://formspree.io) to securely collect and forward enquiries without requiring a custom backend. This allows easy integration with static hosting services like GitHub Pages or Netlify.
+**HTML**  
+Provides page structure, semantic tagging, and accessibility support
+
+**CSS**  
+Controls layout, colour, spacing, typography, responsive design, and theme mode
+
+**JavaScript**  
+Adds interactive behaviour and improves user experience through validation, animation, and saved user settings
+
+**GitHub Pages**  
+Hosts the site in a public and reliable environment
+
+**Formspree**  
+Handles secure form submissions without a server
+
+## Accessibility and Usability
+
+This site supports an inclusive and accessible experience through:
+
+- Clear text hierarchy and consistent headings
+- Alt text for images
+- Keyboard-friendly navigation
+- High contrast mode through theme toggle
+- Logical tab order and focus outline visibility
+- Printable resume and document access
 
 ## Author
 
 **Gemma Watson**  
-Bachelor of Education (Secondary) / Bachelor of Arts (Design and Innovation Technologies) 
-Australian Catholic University
+Bachelor of Education (Secondary) / Bachelor of Arts (Design and Innovation Technologies)
+Australian Catholic University  
+Sydney, Australia
