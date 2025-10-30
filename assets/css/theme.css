@@ -517,3 +517,21 @@ html[data-theme="dark"] .projects-page h2 a:hover {
   color: #cfe9e7;
   text-decoration: underline;
 }
+
+/* 1) HEADER LOGO TEXT (top of page) */
+html[data-theme="dark"] #logo h1,
+html[data-theme="dark"] #logo h1 a {
+  color: #eaf6f5; /* dark mode colour */
+}
+
+/* Light mode explicit */
+html:not([data-theme="dark"]) #logo h1,
+html:not([data-theme="dark"]) #logo h1 a {
+  color: #193a50; /* pick your light colour */
+}
+
+/* 3) SAFETY: remove any old global that forces logo colour in both themes */
+#logo h1,
+#logo h1 a {
+  color: inherit;
+} /* neutral */
